@@ -1,0 +1,224 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Computer Science Notes\n\n\n\nThese notes were taken from a variaty of sources and cover useful computer science topics.\n\n\nAuthor\n\n\nChad Sheets - \nGitHub\n | \nBlog\n | \nEmail", 
+            "title": "Intoduction"
+        }, 
+        {
+            "location": "/#author", 
+            "text": "Chad Sheets -  GitHub  |  Blog  |  Email", 
+            "title": "Author"
+        }, 
+        {
+            "location": "/big-o/", 
+            "text": "Big O\n\n\n\nAsymptotic complexity is represented using Big O notation. It's a metric to describe the efficiency of algorithms.\n\n\nIn Order, common complexities are O(log x), O(x), O(x log x), O(x^2), O(2^x), O(x!)\n\n\nBig O, Theta, Omega\n\n\n\n\nBig O: In academia, upper bound on time.\n\n\nBig Omega: lower bound on time complexity\n\n\nBig Theta: Combination of O and Omega\n\n\n\n\nAmortized Time\n\n\nSome tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).\n\n\nLog N Runtime", 
+            "title": "Big-O"
+        }, 
+        {
+            "location": "/big-o/#big-o-theta-omega", 
+            "text": "Big O: In academia, upper bound on time.  Big Omega: lower bound on time complexity  Big Theta: Combination of O and Omega", 
+            "title": "Big O, Theta, Omega"
+        }, 
+        {
+            "location": "/big-o/#amortized-time", 
+            "text": "Some tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).", 
+            "title": "Amortized Time"
+        }, 
+        {
+            "location": "/big-o/#log-n-runtime", 
+            "text": "", 
+            "title": "Log N Runtime"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Linked List"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Tree/Tries"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Graph"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Stack/Queue"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Heap"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Vector"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Hash Table"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Breadth/Depth First"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Binary Search"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/sorting-algorithms/", 
+            "text": "Sorting Algorithms\n\n\n\nDefinitions\n\n\n\n\nStability - an algorithm that retains the order of same-value elements in the sorted list\n\n\n\n\nComparison Sorting\n\n\nCompare elements and shift to left or right. Big Theta (n log n)\n\n\nInteger Sorting\n\n\nCompute position by determining how many elements are smaller or larger", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/sorting-algorithms/#definitions", 
+            "text": "Stability - an algorithm that retains the order of same-value elements in the sorted list", 
+            "title": "Definitions"
+        }, 
+        {
+            "location": "/sorting-algorithms/#comparison-sorting", 
+            "text": "Compare elements and shift to left or right. Big Theta (n log n)", 
+            "title": "Comparison Sorting"
+        }, 
+        {
+            "location": "/sorting-algorithms/#integer-sorting", 
+            "text": "Compute position by determining how many elements are smaller or larger", 
+            "title": "Integer Sorting"
+        }, 
+        {
+            "location": "/binary-search/", 
+            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "title": "Merge Sort"
+        }, 
+        {
+            "location": "/binary-search/#description", 
+            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/binary-search/#implementations", 
+            "text": "C++, Java, Python", 
+            "title": "Implementations"
+        }, 
+        {
+            "location": "/quick-sort/", 
+            "text": "Binary Search\n\n\n\nAsymptotic complexity is represented using Big O notation. It's a metric to describe the efficiency of algorithms.\n\n\nIn Order, common complexities are O(log x), O(x), O(x log x), O(x^2), O(2^x), O(x!)\n\n\nBig O, Theta, Omega\n\n\n\n\nBig O: In academia, upper bound on time.\n\n\nBig Omega: lower bound on time complexity\n\n\nBig Theta: Combination of O and Omega\n\n\n\n\nAmortized Time\n\n\nSome tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).\n\n\nLog N Runtime", 
+            "title": "Quick Sort"
+        }, 
+        {
+            "location": "/quick-sort/#big-o-theta-omega", 
+            "text": "Big O: In academia, upper bound on time.  Big Omega: lower bound on time complexity  Big Theta: Combination of O and Omega", 
+            "title": "Big O, Theta, Omega"
+        }, 
+        {
+            "location": "/quick-sort/#amortized-time", 
+            "text": "Some tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).", 
+            "title": "Amortized Time"
+        }, 
+        {
+            "location": "/quick-sort/#log-n-runtime", 
+            "text": "", 
+            "title": "Log N Runtime"
+        }
+    ]
+}
