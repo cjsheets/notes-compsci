@@ -1,31 +1,39 @@
 site_name: 'Computer Science Notes'
 pages:
-- Intoduction: 'index.md'
-- High Level Topics:
-    - Big-O: 'big-o/index.md'
+- High Level:
+    - Intoduction: 'index.md'
+    - Big-O: 'high-level/big-o/index.md'
 - Data Structures:
-    - Linked List: 'binary-search/index.md'
-    - Tree/Tries: 'binary-search/index.md'
-    - Graph: 'binary-search/index.md'
-    - Stack/Queue: 'binary-search/index.md'
-    - Heap: 'binary-search/index.md'
-    - Vector: 'binary-search/index.md'
-    - Hash Table: 'binary-search/index.md'
+    - List/Queue: 'data-structures/list-queue/index.md'
+    - Tree/Tries: 'data-structures/tree/index.md'
+    - Graph: 'data-structures/graph/index.md'
+    - Heap: 'data-structures/heap/index.md'
+    - Vector: 'data-structures/vector/index.md'
+    - Hash Table: 'data-structures/hash-table/index.md'
 - Search Algorithms:
-    - Breadth/Depth First: 'binary-search/index.md'
-    - Binary Search: 'binary-search/index.md'
+    - Breadth/Depth First: 'search-algorithms/breadth-depth-first/index.md'
+    - Binary Search: 'search-algorithms/binary-search/index.md'
 - Sorting Algorithms:
     - Introduction: 'sorting-algorithms/index.md'
-    - Merge Sort: 'binary-search/index.md'
-    - Quick Sort: 'quick-sort/index.md'
+    - Merge Sort: 'sorting-algorithms/merge-sort/index.md'
+    - Quick Sort: 'sorting-algorithms/quick-sort/index.md'
 docs_dir: 'docs'
 site_dir: 'www'
 theme: material
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
 extra:
   palette:
     primary: 'blue'
     accent: 'indigo'
   feature:
     tabs: true
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
-copyright: Copyright &copy; 2016 <a href="http://cjsheets.com">Chad Sheets</a>.
+copyright: Copyright &copy; 2017 <a href="http://cjsheets.com">Chad Sheets</a>.

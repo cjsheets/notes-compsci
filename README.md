@@ -16,5 +16,5 @@ virtualenv .env; source .env/bin/activate
 
 ### Install MkDocs
 
-- `pip install mkdocs`
+- `pip install mkdocs-material pygments`
 - `mkdocs build`
