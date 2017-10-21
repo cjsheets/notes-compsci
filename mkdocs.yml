@@ -1,0 +1,31 @@
+site_name: 'Computer Science Notes'
+pages:
+- Intoduction: 'index.md'
+- High Level Topics:
+    - Big-O: 'big-o/index.md'
+- Data Structures:
+    - Linked List: 'binary-search/index.md'
+    - Tree/Tries: 'binary-search/index.md'
+    - Graph: 'binary-search/index.md'
+    - Stack/Queue: 'binary-search/index.md'
+    - Heap: 'binary-search/index.md'
+    - Vector: 'binary-search/index.md'
+    - Hash Table: 'binary-search/index.md'
+- Search Algorithms:
+    - Breadth/Depth First: 'binary-search/index.md'
+    - Binary Search: 'binary-search/index.md'
+- Sorting Algorithms:
+    - Introduction: 'sorting-algorithms/index.md'
+    - Merge Sort: 'binary-search/index.md'
+    - Quick Sort: 'quick-sort/index.md'
+docs_dir: 'docs'
+site_dir: 'www'
+theme: material
+extra:
+  palette:
+    primary: 'blue'
+    accent: 'indigo'
+  feature:
+    tabs: true
+
+copyright: Copyright &copy; 2016 <a href="http://cjsheets.com">Chad Sheets</a>.
