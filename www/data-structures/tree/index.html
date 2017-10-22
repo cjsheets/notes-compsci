@@ -25,22 +25,22 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.12.0">
     
     
       
-        <title>Merge Sort - Computer Science Notes</title>
+        <title>Tree/Tries - Computer Science Notes</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-04ea671600.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-04ea671600.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -76,7 +76,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Computer Science Notes" class="md-header-nav__button md-logo">
+        <a href="../.." title="Computer Science Notes" class="md-header-nav__button md-logo">
           
             <i class="md-icon md-icon--home"></i>
           
@@ -91,11 +91,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Sorting Algorithms
+                  Data Structures
                 </span>
               
             
-            Merge Sort
+            Tree/Tries
           
         </span>
       </div>
@@ -143,22 +143,12 @@
     <ul class="md-tabs__list">
       
         
-  <li class="md-tabs__item">
-    
-      <a href=".." title="Intoduction" class="md-tabs__link">
-        Intoduction
-      </a>
-    
-  </li>
-
-      
-        
   
   
     <li class="md-tabs__item">
       
-        <a href="../big-o/" title="High Level Topics" class="md-tabs__link">
-          High Level Topics
+        <a href="../.." title="General" class="md-tabs__link">
+          General
         </a>
       
     </li>
@@ -170,7 +160,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" title="Data Structures" class="md-tabs__link">
+        <a href="../list-queue/" title="Data Structures" class="md-tabs__link md-tabs__link--active">
           Data Structures
         </a>
       
@@ -183,8 +173,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" title="Search Algorithms" class="md-tabs__link">
-          Search Algorithms
+        <a href="../../search-algorithms/breadth-depth-first/" title="Search" class="md-tabs__link">
+          Search
         </a>
       
     </li>
@@ -196,8 +186,21 @@
   
     <li class="md-tabs__item">
       
-        <a href="../sorting-algorithms/" title="Sorting Algorithms" class="md-tabs__link md-tabs__link--active">
-          Sorting Algorithms
+        <a href="../../sorting-algorithms/" title="Sorting" class="md-tabs__link">
+          Sorting
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../javascript/" title="Javascript" class="md-tabs__link">
+          Javascript
         </a>
       
     </li>
@@ -217,11 +220,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
+    <span class="md-nav__button md-logo">
       
         <i class="md-icon md-icon--home"></i>
       
-    </div>
+    </span>
     Computer Science Notes
   </label>
   
@@ -232,28 +235,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href=".." title="Intoduction" class="md-nav__link">
-      Intoduction
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
-    <label class="md-nav__link" for="nav-2">
-      High Level Topics
+    <label class="md-nav__link" for="nav-1">
+      General
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        High Level Topics
+      <label class="md-nav__title" for="nav-1">
+        General
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -264,8 +255,167 @@
 
 
   <li class="md-nav__item">
-    <a href="../big-o/" title="Big-O" class="md-nav__link">
+    <a href="../.." title="Intoduction" class="md-nav__link">
+      Intoduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../general/big-o/" title="Big-O" class="md-nav__link">
       Big-O
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Data Structures
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Data Structures
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../list-queue/" title="List/Queue" class="md-nav__link">
+      List/Queue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Tree/Tries
+      </label>
+    
+    <a href="./" title="Tree/Tries" class="md-nav__link md-nav__link--active">
+      Tree/Tries
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-javascript" title="Challenges - Javascript" class="md-nav__link">
+    Challenges - Javascript
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack-and-queue" title="Stack and Queue" class="md-nav__link">
+    Stack and Queue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../graph/" title="Graph" class="md-nav__link">
+      Graph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../heap/" title="Heap" class="md-nav__link">
+      Heap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vector/" title="Vector" class="md-nav__link">
+      Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hash-table/" title="Hash Table" class="md-nav__link">
+      Hash Table
     </a>
   </li>
 
@@ -285,11 +435,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
-      Data Structures
+      Search
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        Data Structures
+        Search
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -300,8 +450,8 @@
 
 
   <li class="md-nav__item">
-    <a href="./" title="Linked List" class="md-nav__link">
-      Linked List
+    <a href="../../search-algorithms/breadth-depth-first/" title="Breadth/Depth First" class="md-nav__link">
+      Breadth/Depth First
     </a>
   </li>
 
@@ -312,68 +462,8 @@
 
 
   <li class="md-nav__item">
-    <a href="./" title="Tree/Tries" class="md-nav__link">
-      Tree/Tries
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="./" title="Graph" class="md-nav__link">
-      Graph
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="./" title="Stack/Queue" class="md-nav__link">
-      Stack/Queue
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="./" title="Heap" class="md-nav__link">
-      Heap
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="./" title="Vector" class="md-nav__link">
-      Vector
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="./" title="Hash Table" class="md-nav__link">
-      Hash Table
+    <a href="../../search-algorithms/binary-search/" title="Binary Search" class="md-nav__link">
+      Binary Search
     </a>
   </li>
 
@@ -393,11 +483,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Search Algorithms
+      Sorting
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Search Algorithms
+        Sorting
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -408,8 +498,8 @@
 
 
   <li class="md-nav__item">
-    <a href="./" title="Breadth/Depth First" class="md-nav__link">
-      Breadth/Depth First
+    <a href="../../sorting-algorithms/" title="Introduction" class="md-nav__link">
+      Introduction
     </a>
   </li>
 
@@ -420,8 +510,20 @@
 
 
   <li class="md-nav__item">
-    <a href="./" title="Binary Search" class="md-nav__link">
-      Binary Search
+    <a href="../../sorting-algorithms/merge-sort/" title="Merge Sort" class="md-nav__link">
+      Merge Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sorting-algorithms/quick-sort/" title="Quick Sort" class="md-nav__link">
+      Quick Sort
     </a>
   </li>
 
@@ -435,19 +537,17 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Sorting Algorithms
+      Javascript
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        Sorting Algorithms
+        Javascript
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -458,71 +558,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../sorting-algorithms/" title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Merge Sort
-      </label>
-    
-    <a href="./" title="Merge Sort" class="md-nav__link md-nav__link--active">
-      Merge Sort
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#description" title="Description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implementations" title="Implementations" class="md-nav__link">
-    Implementations
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../quick-sort/" title="Quick Sort" class="md-nav__link">
-      Quick Sort
+    <a href="../../javascript/" title="Basics" class="md-nav__link">
+      Basics
     </a>
   </li>
 
@@ -546,21 +583,29 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" title="Description" class="md-nav__link">
-    Description
+  <a href="#challenges-javascript" title="Challenges - Javascript" class="md-nav__link">
+    Challenges - Javascript
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack-and-queue" title="Stack and Queue" class="md-nav__link">
+    Stack and Queue
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#implementations" title="Implementations" class="md-nav__link">
-    Implementations
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -579,16 +624,10 @@
               
                 
                 
-                <h1>Binary Search</h1>
-
-<ul>
-<li>Given a sorted array, find N</li>
-<li>O(log n)</li>
-</ul>
-<h2 id="description">Description</h2>
-<p>Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.</p>
-<h2 id="implementations">Implementations</h2>
-<p><a href="http://www.geeksforgeeks.org/binary-search/">C++, Java, Python</a></p>
+                <h1 id="trees-and-tries">Trees and Tries</h1>
+<h2 id="challenges-javascript">Challenges - Javascript</h2>
+<h3 id="stack-and-queue">Stack and Queue</h3>
+<hr />
                 
                   
                 
@@ -607,7 +646,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../sorting-algorithms/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../list-queue/" title="List/Queue" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -616,19 +655,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction
+                List/Queue
               </span>
             </div>
           </a>
         
         
-          <a href="../quick-sort/" title="Quick Sort" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../graph/" title="Graph" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Quick Sort
+                Graph
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -644,7 +683,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 <a href="http://cjsheets.com">Chad Sheets</a>.
+            Copyright &copy; 2017 <a href="http://cjsheets.com">Chad Sheets</a>.
           </div>
         
         powered by
@@ -662,10 +701,12 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-268d62d82d.js"></script>
+      <script src="../../assets/javascripts/application-268d62d82d.js"></script>
       
       
-      <script>app.initialize({url:{base:".."}})</script>
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
     

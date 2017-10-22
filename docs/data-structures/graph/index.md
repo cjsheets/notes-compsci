@@ -15,6 +15,20 @@ edges). Example:
 * Adjacency - Nodes/Verticies are adjacent if they are connected by an Edge
 * Path - A sequence of edges that connect verticies
 
+## Representation
+
+* Adjacency list - store a list of adjacent vertities (edges) for each vertex
+* Adjacency matrix - two-dimensional matrix with rows as source verticies and
+columns as destination verticies
+
+## Complexity 
+
+| Storage | Add Vertex | Add Edge | Query | 
+| - | - | - | - |
+| $$ O(\|V\| + \|E\|) $$ | $$ O(1) $$ | $$ O(1) $$ | $$ O(\|V\|) $$ |
+| $$ O(\|V\|^2) $$ | $$ O(\|V\|^2) $$ | $$ O(1) $$ | $$ O(1) $$ |
+
+
 ## Depth First Search
 
 Traverse graph by searching "deep" first, using a stack to track progress.
@@ -30,3 +44,4 @@ Traverse graph by searching "wide" first, using a queue to track progress.
 1. Visit adjacent (unvisited) vertex, mark visited, insert in queue.
 2. Once no unvisited adjacent vertex available, remove the first queue element and check for verticies.
 3. Repeat until queue is empty.
+

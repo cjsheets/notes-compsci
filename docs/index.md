@@ -1,7 +1,19 @@
-<h1>Computer Science Notes</h1>
+<h1>CompSci Notes</h1>
 
-These notes were taken from a variaty of sources and cover useful computer science topics.
+Information collected from a number of different resources.
 
-## Author
+Examples are primarally in JavaScript. 
 
-Chad Sheets - [GitHub](https://github.com/cjsheets) | [Blog](http://chadsheets.com/) | [Email](mailto:chad@linconf.com)
+**Current Status:**
+
+* [x] General
+    * [x] Big-O Notation
+* [ ] Javascript
+* [ ] Data Structures
+* [ ] Search Algorithms
+    * [ ] Binary Search
+    * [ ] Graph DFS
+    * [ ] Graph BFS
+* [ ] Sorting Algorithms
+    * [ ] Merge Sort
+    * [ ] Quick Sort

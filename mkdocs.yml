@@ -1,9 +1,10 @@
 site_name: 'Computer Science Notes'
 pages:
 - General:
-    - Intoduction: 'index.md'
+    - General CompSci: 'general/index.md'
     - Big-O: 'general/big-o/index.md'
 - Data Structures:
+    - Data Structures: 'general/index.md'
     - List/Queue: 'data-structures/list-queue/index.md'
     - Tree/Tries: 'data-structures/tree/index.md'
     - Graph: 'data-structures/graph/index.md'
@@ -11,10 +12,11 @@ pages:
     - Vector: 'data-structures/vector/index.md'
     - Hash Table: 'data-structures/hash-table/index.md'
 - Search:
+    - Search Algorithms: 'general/index.md'
     - Breadth/Depth First: 'search-algorithms/breadth-depth-first/index.md'
     - Binary Search: 'search-algorithms/binary-search/index.md'
 - Sorting:
-    - Introduction: 'sorting-algorithms/index.md'
+    - Sorting Algorithms: 'sorting-algorithms/index.md'
     - Merge Sort: 'sorting-algorithms/merge-sort/index.md'
     - Quick Sort: 'sorting-algorithms/quick-sort/index.md'
 - Javascript:
@@ -32,7 +34,7 @@ markdown_extensions:
 extra:
   palette:
     primary: 'blue'
-    accent: 'indigo'
+    accent: 'light-blue'
   feature:
     tabs: true
 extra_javascript:

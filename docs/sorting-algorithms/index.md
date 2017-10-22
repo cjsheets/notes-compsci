@@ -1,14 +1,15 @@
-<h1>Sorting Algorithms</h1>
+**Sections:** [Merge Sort](/sorting-algorithms/merge-sort/), [Quick Sort](/sorting-algorithms/quick-sort/)
 
-# Definitions
+## Definitions
 
-* Stability - an algorithm that retains the order of same-value elements in the sorted list
+* Stability - Algorithm that retains the order of same-value elements in the sorted list
 
-## Comparison Sorting
+* Comparison Sorting - Compare elements and shift to left or right. Big Theta (n log n)
 
-Compare elements and shift to left or right. Big Theta (n log n)
+* Integer Sorting - Compute position by determining how many elements are smaller or larger
 
 
-## Integer Sorting
 
-Compute position by determining how many elements are smaller or larger
+* [ ] Sorting Algorithms
+    * [ ] Merge Sort
+    * [ ] Quick Sort

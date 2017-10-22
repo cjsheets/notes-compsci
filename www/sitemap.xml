@@ -2,18 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+        
     <url>
      <loc>/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
         
     <url>
-     <loc>/big-o/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/general/big-o/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -22,44 +20,38 @@
     
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/data-structures/list-queue/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/data-structures/tree/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/data-structures/graph/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/data-structures/heap/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/data-structures/vector/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/data-structures/hash-table/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -68,14 +60,14 @@
     
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/search-algorithms/breadth-depth-first/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/search-algorithms/binary-search/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -85,19 +77,29 @@
         
     <url>
      <loc>/sorting-algorithms/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/binary-search/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/sorting-algorithms/merge-sort/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/quick-sort/</loc>
-     <lastmod>2017-10-20</lastmod>
+     <loc>/sorting-algorithms/quick-sort/</loc>
+     <lastmod>2017-10-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/javascript/</loc>
+     <lastmod>2017-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
