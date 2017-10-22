@@ -1,4 +1,6 @@
-site_name: 'Computer Science Notes'
+site_name: 'CompSci Notes'
+site_author: 'Chad Sheets'
+site_url: 'https://chadsheets.com/notes-compsci/'
 pages:
 - General:
     - General CompSci: 'general/index.md'
@@ -40,4 +42,6 @@ extra:
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
+repo_name: 'cjsheets/notes-compsci'
+repo_url: 'https://github.com/cjsheets/notes-compsci'
 copyright: Copyright &copy; 2017 <a href="http://cjsheets.com">Chad Sheets</a>.
