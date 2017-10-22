@@ -25,22 +25,22 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.12.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-cjs-1.12.5">
     
     
       
-        <title>Quick Sort - Computer Science Notes</title>
+        <title>Big-O - Computer Science Notes</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-04ea671600.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-22ae5d60f6.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-81247a88c7.palette.css">
       
     
     
@@ -60,7 +60,7 @@
   
   
   
-    <body data-md-color-primary="blue" data-md-color-accent="indigo">
+    <body data-md-color-primary="blue" data-md-color-accent="light-blue">
   
     <svg class="md-svg">
       <defs>
@@ -76,7 +76,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Computer Science Notes" class="md-header-nav__button md-logo">
+        <a href="../" title="Computer Science Notes" class="md-header-nav__button md-logo">
           
             <i class="md-icon md-icon--home"></i>
           
@@ -91,11 +91,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Sorting Algorithms
+                  General
                 </span>
               
             
-            Quick Sort
+            Big-O
           
         </span>
       </div>
@@ -143,22 +143,12 @@
     <ul class="md-tabs__list">
       
         
-  <li class="md-tabs__item">
-    
-      <a href=".." title="Intoduction" class="md-tabs__link">
-        Intoduction
-      </a>
-    
-  </li>
-
-      
-        
   
   
     <li class="md-tabs__item">
       
-        <a href="../big-o/" title="High Level Topics" class="md-tabs__link">
-          High Level Topics
+        <a href="../" title="General" class="md-tabs__link md-tabs__link--active">
+          General
         </a>
       
     </li>
@@ -170,7 +160,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../binary-search/" title="Data Structures" class="md-tabs__link">
+        <a href="../" title="Data Structures" class="md-tabs__link">
           Data Structures
         </a>
       
@@ -183,8 +173,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../binary-search/" title="Search Algorithms" class="md-tabs__link">
-          Search Algorithms
+        <a href="../" title="Search" class="md-tabs__link">
+          Search
         </a>
       
     </li>
@@ -196,8 +186,21 @@
   
     <li class="md-tabs__item">
       
-        <a href="../sorting-algorithms/" title="Sorting Algorithms" class="md-tabs__link md-tabs__link--active">
-          Sorting Algorithms
+        <a href="../../sorting-algorithms/" title="Sorting" class="md-tabs__link">
+          Sorting
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../javascript/" title="Javascript" class="md-tabs__link">
+          Javascript
         </a>
       
     </li>
@@ -217,219 +220,15 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
+    <span class="md-nav__button md-logo">
       
         <i class="md-icon md-icon--home"></i>
       
-    </div>
+    </span>
     Computer Science Notes
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href=".." title="Intoduction" class="md-nav__link">
-      Intoduction
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      High Level Topics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        High Level Topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../big-o/" title="Big-O" class="md-nav__link">
-      Big-O
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Data Structures
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Data Structures
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Linked List" class="md-nav__link">
-      Linked List
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Tree/Tries" class="md-nav__link">
-      Tree/Tries
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Graph" class="md-nav__link">
-      Graph
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Stack/Queue" class="md-nav__link">
-      Stack/Queue
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Heap" class="md-nav__link">
-      Heap
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Vector" class="md-nav__link">
-      Vector
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Hash Table" class="md-nav__link">
-      Hash Table
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      Search Algorithms
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Search Algorithms
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Breadth/Depth First" class="md-nav__link">
-      Breadth/Depth First
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Binary Search" class="md-nav__link">
-      Binary Search
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
     
       
       
@@ -440,14 +239,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
-    <label class="md-nav__link" for="nav-5">
-      Sorting Algorithms
+    <label class="md-nav__link" for="nav-1">
+      General
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Sorting Algorithms
+      <label class="md-nav__title" for="nav-1">
+        General
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -458,20 +257,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../sorting-algorithms/" title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../binary-search/" title="Merge Sort" class="md-nav__link">
-      Merge Sort
+    <a href="../" title="General CompSci" class="md-nav__link">
+      General CompSci
     </a>
   </li>
 
@@ -489,11 +276,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Quick Sort
+        Big-O
       </label>
     
-    <a href="./" title="Quick Sort" class="md-nav__link md-nav__link--active">
-      Quick Sort
+    <a href="./" title="Big-O" class="md-nav__link md-nav__link--active">
+      Big-O
     </a>
     
       
@@ -525,12 +312,283 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
       
       
     </ul>
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Data Structures
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Data Structures
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Data Structures" class="md-nav__link">
+      Data Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structures/list-queue/" title="List/Queue" class="md-nav__link">
+      List/Queue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structures/tree/" title="Tree/Tries" class="md-nav__link">
+      Tree/Tries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structures/graph/" title="Graph" class="md-nav__link">
+      Graph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structures/heap/" title="Heap" class="md-nav__link">
+      Heap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structures/vector/" title="Vector" class="md-nav__link">
+      Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structures/hash-table/" title="Hash Table" class="md-nav__link">
+      Hash Table
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Search
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Search
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Search Algorithms" class="md-nav__link">
+      Search Algorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../search-algorithms/breadth-depth-first/" title="Breadth/Depth First" class="md-nav__link">
+      Breadth/Depth First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../search-algorithms/binary-search/" title="Binary Search" class="md-nav__link">
+      Binary Search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Sorting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Sorting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sorting-algorithms/" title="Sorting Algorithms" class="md-nav__link">
+      Sorting Algorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sorting-algorithms/merge-sort/" title="Merge Sort" class="md-nav__link">
+      Merge Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sorting-algorithms/quick-sort/" title="Quick Sort" class="md-nav__link">
+      Quick Sort
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Javascript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../javascript/" title="Basics" class="md-nav__link">
+      Basics
+    </a>
   </li>
 
         
@@ -578,6 +636,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -593,7 +658,7 @@
               
                 
                 
-                <h1>Binary Search</h1>
+                <h1>Big O</h1>
 
 <p>Asymptotic complexity is represented using Big O notation. It's a metric to describe the efficiency of algorithms.</p>
 <p>In Order, common complexities are O(log x), O(x), O(x log x), O(x^2), O(2^x), O(x!)</p>
@@ -609,6 +674,8 @@ However, when the array is full you have to copy every element to a new, larger 
 operation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while
 amortized time is O(1).</p>
 <h2 id="log-n-runtime">Log N Runtime</h2>
+<h2 id="reference">Reference</h2>
+<p>The frequently reference <a href="http://bigocheatsheet.com/">Big-O Cheatsheet</a></p>
                 
                   
                 
@@ -627,7 +694,7 @@ amortized time is O(1).</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../binary-search/" title="Merge Sort" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="General CompSci" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -636,11 +703,25 @@ amortized time is O(1).</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Merge Sort
+                General CompSci
               </span>
             </div>
           </a>
         
+        
+          <a href="../" title="Data Structures" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Data Structures
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
@@ -650,7 +731,7 @@ amortized time is O(1).</p>
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 <a href="http://cjsheets.com">Chad Sheets</a>.
+            Copyright &copy; 2017 <a href="http://cjsheets.com">Chad Sheets</a>.
           </div>
         
         powered by
@@ -668,10 +749,12 @@ amortized time is O(1).</p>
       
     </div>
     
-      <script src="../assets/javascripts/application-268d62d82d.js"></script>
+      <script src="../../assets/javascripts/application-268d62d82d.js"></script>
       
       
-      <script>app.initialize({url:{base:".."}})</script>
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
     

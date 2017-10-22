@@ -1,224 +1,229 @@
 {
     "docs": [
         {
-            "location": "/", 
-            "text": "Computer Science Notes\n\n\n\nThese notes were taken from a variaty of sources and cover useful computer science topics.\n\n\nAuthor\n\n\nChad Sheets - \nGitHub\n | \nBlog\n | \nEmail", 
-            "title": "Intoduction"
+            "location": "/general/", 
+            "text": "General\n\n\n\nstuff", 
+            "title": "General CompSci"
         }, 
         {
-            "location": "/#author", 
-            "text": "Chad Sheets -  GitHub  |  Blog  |  Email", 
-            "title": "Author"
-        }, 
-        {
-            "location": "/big-o/", 
-            "text": "Big O\n\n\n\nAsymptotic complexity is represented using Big O notation. It's a metric to describe the efficiency of algorithms.\n\n\nIn Order, common complexities are O(log x), O(x), O(x log x), O(x^2), O(2^x), O(x!)\n\n\nBig O, Theta, Omega\n\n\n\n\nBig O: In academia, upper bound on time.\n\n\nBig Omega: lower bound on time complexity\n\n\nBig Theta: Combination of O and Omega\n\n\n\n\nAmortized Time\n\n\nSome tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).\n\n\nLog N Runtime", 
+            "location": "/general/big-o/", 
+            "text": "Big O\n\n\n\nAsymptotic complexity is represented using Big O notation. It's a metric to describe the efficiency of algorithms.\n\n\nIn Order, common complexities are O(log x), O(x), O(x log x), O(x^2), O(2^x), O(x!)\n\n\nBig O, Theta, Omega\n\n\n\n\nBig O: In academia, upper bound on time.\n\n\nBig Omega: lower bound on time complexity\n\n\nBig Theta: Combination of O and Omega\n\n\n\n\nAmortized Time\n\n\nSome tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).\n\n\nLog N Runtime\n\n\nReference\n\n\nThe frequently reference \nBig-O Cheatsheet", 
             "title": "Big-O"
         }, 
         {
-            "location": "/big-o/#big-o-theta-omega", 
+            "location": "/general/big-o/#big-o-theta-omega", 
             "text": "Big O: In academia, upper bound on time.  Big Omega: lower bound on time complexity  Big Theta: Combination of O and Omega", 
             "title": "Big O, Theta, Omega"
         }, 
         {
-            "location": "/big-o/#amortized-time", 
+            "location": "/general/big-o/#amortized-time", 
             "text": "Some tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).", 
             "title": "Amortized Time"
         }, 
         {
-            "location": "/big-o/#log-n-runtime", 
+            "location": "/general/big-o/#log-n-runtime", 
             "text": "", 
             "title": "Log N Runtime"
         }, 
         {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/general/big-o/#reference", 
+            "text": "The frequently reference  Big-O Cheatsheet", 
+            "title": "Reference"
+        }, 
+        {
+            "location": "/general/", 
+            "text": "General\n\n\n\nstuff", 
+            "title": "Data Structures"
+        }, 
+        {
+            "location": "/data-structures/list-queue/", 
+            "text": "Lists, Queues and Stacks\n\n\nChallenges - Javascript\n\n\nStack and Queue\n\n\n\n\nQuestion:\n Implement a stack and queue.\n\n\nAnswer:\n The stack and queue data structures already exist in the form of arrays with push, pop and shift operators.\n\n\nvar\n \nmyStack\n \n=\n \n[];\n\n\n\nmyStack\n.\npush\n(\n1\n);\n\n\nmyStack\n.\npush\n(\n2\n);\n\n\nmyStack\n.\npop\n();\n\n\n\nvar\n \nmyQueue\n \n=\n \n[];\n\n\n\nmyQueue\n.\npush\n(\n1\n);\n\n\nmyQueue\n.\npush\n(\n2\n);\n\n\nmyQueue\n.\nshift\n();\n\n\n\n\n\n\nPriority Queue\n\n\n\n\nQuestion:\n Implement a priority queue.\n\n\n\n\nToDo\n\n\nImplement a priority queue\n\n\n\n\nLinked List\n\n\nQuestion:\n Advantages/Disadvantages? Implement a linked list.\n\n\nAnswer:\n See \nWikipedia\n for benifits.\n\n\nThey use more memory than arrays due to the addition of pointers. They're limited to sequential access.\n\n\nIn choosing, if you need fast appending/prepending use linked-list or fast index based retrieval of data (array).\n\n\nImplemented in \nads-ts.LinkedList\n. Methods work on the fundemental\n\"Node\" data structure.\n\n\ninterface\n \nINode\nT\n \n{\n\n  \nitem\n: \nT\n;\n\n  \nnext?\n: \nINode\nT\n;\n\n\n}\n\n\n\n\n\n\n\n\nQuestion:\n Reverse a SLL (singly linked list).\n\n\nImplemented in \nads-ts.LinkedList\n. Requires O(n) time, touching each element once.\n\n\n\n\nQuestion:\n Find the middle of a SLL.\n\n\nMove one pointer at single and one at double steps. When the fast pointer reaches null, the slow pointer is in the middle.\n\n\n\n\nQuestion:\n Detect a loop in a SLL.\n\n\nAnswer:\n \n\n\nFloyd\u2019s Cycle-Finding Algorithm requires a slow and fast pointer. Move a pointer at once \"next\" per itteration and a second at two \"nexts\"\nper itteration. Compare them. If they're equal before the fast pointer === \"null\" there is a loop.\n\n\nAlternatively, you could store objects in a hash table and look for repeats that way. You could also append data (like a \"visited\" flag)\nto nodes to indicate you've seen it before. \n\n\n\n\nQuestion:\n Remove a loop in a SLL.\n\n\nFrom \nGeeksforGeeks\n\n\n\n\nDetect Loop using Floyd\u2019s Cycle detection algo and get the pointer to a loop node.\n\n\nCount the number of nodes in loop. Let the count be k.\n\n\nFix one pointer to the head and another to kth node from head.\n\n\nMove both pointers at the same pace, they will meet at loop starting node.\n\n\nGet pointer to the last node of loop and make next of it as NULL.\n\n\n\n\n\n\nQuestion:\n Determnine the size of a SLL.\n\n\nIdeally, count when you add and remove so size is always available.\n\n\nIf not, traverse the list if you can assume there are no loops. If you can't assume that, you need to run loop-detection mentioned above,\nfind the looped node, and use the combination of head -\n loop node + loop length.\n\n\n\n\nQuestion:\n Find the intersection of two SLL in a single itteration.\n\n\nfrom \nGeeksforGeeks\n\n\n\n\nGet length of both lists\n\n\nCalculate the difference of lengths d = abs(c1 \u2013 c2)\n\n\nNow traverse the bigger list from the first node till d nodes \n\n\nTraverse both the lists in parallel till we come across a common node.\n\n\n\n\nOtherwise, use a hash map\n\n\n\n\nQuestion:\n sort Linked list\n\n\nQuestion:\n Remove duplicate from unsorted LL\n\n\nQuestion:\n Check whether a linked list is a palindrome\n\n\nDoubly Linked List\n\n\nSimilar to a linked list but with pointers back to the previous element\n\n\ninterface\n \nINode\nT\n \n{\n\n  \nitem\n: \nT\n;\n\n  \nnext?\n: \nINode\nT\n;\n\n  \nprevious?\n: \nINode\nT\n;\n\n\n}\n\n\n\n\n\n\n\n\nToDo\n\n\nImplement a doubly linked list\n\n\n\n\n\n\nQuestion:\n Reverse a DLL.", 
+            "title": "List/Queue"
+        }, 
+        {
+            "location": "/data-structures/list-queue/#lists-queues-and-stacks", 
+            "text": "", 
+            "title": "Lists, Queues and Stacks"
+        }, 
+        {
+            "location": "/data-structures/list-queue/#challenges-javascript", 
+            "text": "", 
+            "title": "Challenges - Javascript"
+        }, 
+        {
+            "location": "/data-structures/list-queue/#stack-and-queue", 
+            "text": "Question:  Implement a stack and queue.  Answer:  The stack and queue data structures already exist in the form of arrays with push, pop and shift operators.  var   myStack   =   [];  myStack . push ( 1 );  myStack . push ( 2 );  myStack . pop ();  var   myQueue   =   [];  myQueue . push ( 1 );  myQueue . push ( 2 );  myQueue . shift ();", 
+            "title": "Stack and Queue"
+        }, 
+        {
+            "location": "/data-structures/list-queue/#priority-queue", 
+            "text": "Question:  Implement a priority queue.   ToDo  Implement a priority queue", 
+            "title": "Priority Queue"
+        }, 
+        {
+            "location": "/data-structures/list-queue/#linked-list", 
+            "text": "Question:  Advantages/Disadvantages? Implement a linked list.  Answer:  See  Wikipedia  for benifits.  They use more memory than arrays due to the addition of pointers. They're limited to sequential access.  In choosing, if you need fast appending/prepending use linked-list or fast index based retrieval of data (array).  Implemented in  ads-ts.LinkedList . Methods work on the fundemental\n\"Node\" data structure.  interface   INode T   { \n   item :  T ; \n   next? :  INode T ;  }    Question:  Reverse a SLL (singly linked list).  Implemented in  ads-ts.LinkedList . Requires O(n) time, touching each element once.   Question:  Find the middle of a SLL.  Move one pointer at single and one at double steps. When the fast pointer reaches null, the slow pointer is in the middle.   Question:  Detect a loop in a SLL.  Answer:    Floyd\u2019s Cycle-Finding Algorithm requires a slow and fast pointer. Move a pointer at once \"next\" per itteration and a second at two \"nexts\"\nper itteration. Compare them. If they're equal before the fast pointer === \"null\" there is a loop.  Alternatively, you could store objects in a hash table and look for repeats that way. You could also append data (like a \"visited\" flag)\nto nodes to indicate you've seen it before.    Question:  Remove a loop in a SLL.  From  GeeksforGeeks   Detect Loop using Floyd\u2019s Cycle detection algo and get the pointer to a loop node.  Count the number of nodes in loop. Let the count be k.  Fix one pointer to the head and another to kth node from head.  Move both pointers at the same pace, they will meet at loop starting node.  Get pointer to the last node of loop and make next of it as NULL.    Question:  Determnine the size of a SLL.  Ideally, count when you add and remove so size is always available.  If not, traverse the list if you can assume there are no loops. If you can't assume that, you need to run loop-detection mentioned above,\nfind the looped node, and use the combination of head -  loop node + loop length.   Question:  Find the intersection of two SLL in a single itteration.  from  GeeksforGeeks   Get length of both lists  Calculate the difference of lengths d = abs(c1 \u2013 c2)  Now traverse the bigger list from the first node till d nodes   Traverse both the lists in parallel till we come across a common node.   Otherwise, use a hash map   Question:  sort Linked list  Question:  Remove duplicate from unsorted LL  Question:  Check whether a linked list is a palindrome", 
             "title": "Linked List"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/list-queue/#doubly-linked-list", 
+            "text": "Similar to a linked list but with pointers back to the previous element  interface   INode T   { \n   item :  T ; \n   next? :  INode T ; \n   previous? :  INode T ;  }    ToDo  Implement a doubly linked list    Question:  Reverse a DLL.", 
+            "title": "Doubly Linked List"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
-        }, 
-        {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/data-structures/tree/", 
+            "text": "Trees and Tries\n\n\nChallenges - Javascript\n\n\nStack and Queue", 
             "title": "Tree/Tries"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/tree/#trees-and-tries", 
+            "text": "", 
+            "title": "Trees and Tries"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
+            "location": "/data-structures/tree/#challenges-javascript", 
+            "text": "", 
+            "title": "Challenges - Javascript"
         }, 
         {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/data-structures/tree/#stack-and-queue", 
+            "text": "", 
+            "title": "Stack and Queue"
+        }, 
+        {
+            "location": "/data-structures/graph/", 
+            "text": "Graph\n\n\nA graph is a data structure where a finite set of objects are connected by links. The object connection points\nare called \nverticies\n and the links are called \nedges\n. Formally, a graph is a pair of sets \n(V, E)\n  (verticies and\nedges). Example:\n\n\n\n\nV = {a, b, c, d}\n\n\nE = {ab, bc, cd, ca}\n\n\n\n\nImportant Terms\n\n\n\n\nVertex - represented by an array\n\n\nEdge - represented by a 2 dimensional array of 1s and 0s\n\n\nAdjacency - Nodes/Verticies are adjacent if they are connected by an Edge\n\n\nPath - A sequence of edges that connect verticies\n\n\n\n\nRepresentation\n\n\n\n\nAdjacency list - store a list of adjacent vertities (edges) for each vertex\n\n\nAdjacency matrix - two-dimensional matrix with rows as source verticies and\ncolumns as destination verticies\n\n\n\n\nComplexity\n\n\n\n\n\n\n\n\nStorage\n\n\nAdd Vertex\n\n\nAdd Edge\n\n\nQuery\n\n\n\n\n\n\n\n\n\n\n$$ O(|V| + |E|) $$\n\n\n$$ O(1) $$\n\n\n$$ O(1) $$\n\n\n$$ O(|V|) $$\n\n\n\n\n\n\n$$ O(|V|^2) $$\n\n\n$$ O(|V|^2) $$\n\n\n$$ O(1) $$\n\n\n$$ O(1) $$\n\n\n\n\n\n\n\n\nDepth First Search\n\n\nTraverse graph by searching \"deep\" first, using a stack to track progress.\n\n\n\n\nVisit an adjacent (unvisited) vertex, mark as visited, push it in a stack.\n\n\nOnce no adjacent verticies found, pop the stack until new verticy is found\n\n\nRepeat until stack is empty\n\n\n\n\nBreadth First Search\n\n\nTraverse graph by searching \"wide\" first, using a queue to track progress.\n\n\n\n\nVisit adjacent (unvisited) vertex, mark visited, insert in queue.\n\n\nOnce no unvisited adjacent vertex available, remove the first queue element and check for verticies.\n\n\nRepeat until queue is empty.", 
             "title": "Graph"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/graph/#graph", 
+            "text": "A graph is a data structure where a finite set of objects are connected by links. The object connection points\nare called  verticies  and the links are called  edges . Formally, a graph is a pair of sets  (V, E)   (verticies and\nedges). Example:   V = {a, b, c, d}  E = {ab, bc, cd, ca}", 
+            "title": "Graph"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
+            "location": "/data-structures/graph/#important-terms", 
+            "text": "Vertex - represented by an array  Edge - represented by a 2 dimensional array of 1s and 0s  Adjacency - Nodes/Verticies are adjacent if they are connected by an Edge  Path - A sequence of edges that connect verticies", 
+            "title": "Important Terms"
         }, 
         {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
-            "title": "Stack/Queue"
+            "location": "/data-structures/graph/#representation", 
+            "text": "Adjacency list - store a list of adjacent vertities (edges) for each vertex  Adjacency matrix - two-dimensional matrix with rows as source verticies and\ncolumns as destination verticies", 
+            "title": "Representation"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/graph/#complexity", 
+            "text": "Storage  Add Vertex  Add Edge  Query      $$ O(|V| + |E|) $$  $$ O(1) $$  $$ O(1) $$  $$ O(|V|) $$    $$ O(|V|^2) $$  $$ O(|V|^2) $$  $$ O(1) $$  $$ O(1) $$", 
+            "title": "Complexity"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
+            "location": "/data-structures/graph/#depth-first-search", 
+            "text": "Traverse graph by searching \"deep\" first, using a stack to track progress.   Visit an adjacent (unvisited) vertex, mark as visited, push it in a stack.  Once no adjacent verticies found, pop the stack until new verticy is found  Repeat until stack is empty", 
+            "title": "Depth First Search"
         }, 
         {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/data-structures/graph/#breadth-first-search", 
+            "text": "Traverse graph by searching \"wide\" first, using a queue to track progress.   Visit adjacent (unvisited) vertex, mark visited, insert in queue.  Once no unvisited adjacent vertex available, remove the first queue element and check for verticies.  Repeat until queue is empty.", 
+            "title": "Breadth First Search"
+        }, 
+        {
+            "location": "/data-structures/heap/", 
+            "text": "Computer Science Notes\n\n\n\nThese notes were taken from a variaty of sources and cover useful computer science topics.\n\n\nAuthor\n\n\nChad Sheets - \nGitHub\n | \nBlog\n | \nEmail", 
             "title": "Heap"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/heap/#author", 
+            "text": "Chad Sheets -  GitHub  |  Blog  |  Email", 
+            "title": "Author"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
-        }, 
-        {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/data-structures/vector/", 
+            "text": "Computer Science Notes\n\n\n\nThese notes were taken from a variaty of sources and cover useful computer science topics.\n\n\nAuthor\n\n\nChad Sheets - \nGitHub\n | \nBlog\n | \nEmail", 
             "title": "Vector"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/vector/#author", 
+            "text": "Chad Sheets -  GitHub  |  Blog  |  Email", 
+            "title": "Author"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
-        }, 
-        {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/data-structures/hash-table/", 
+            "text": "Computer Science Notes\n\n\n\nThese notes were taken from a variaty of sources and cover useful computer science topics.\n\n\nAuthor\n\n\nChad Sheets - \nGitHub\n | \nBlog\n | \nEmail", 
             "title": "Hash Table"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
+            "location": "/data-structures/hash-table/#author", 
+            "text": "Chad Sheets -  GitHub  |  Blog  |  Email", 
+            "title": "Author"
         }, 
         {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
+            "location": "/general/", 
+            "text": "General\n\n\n\nstuff", 
+            "title": "Search Algorithms"
         }, 
         {
-            "location": "/binary-search/", 
+            "location": "/search-algorithms/breadth-depth-first/", 
             "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
             "title": "Breadth/Depth First"
         }, 
         {
-            "location": "/binary-search/#description", 
+            "location": "/search-algorithms/breadth-depth-first/#description", 
             "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
             "title": "Description"
         }, 
         {
-            "location": "/binary-search/#implementations", 
+            "location": "/search-algorithms/breadth-depth-first/#implementations", 
             "text": "C++, Java, Python", 
             "title": "Implementations"
         }, 
         {
-            "location": "/binary-search/", 
+            "location": "/search-algorithms/binary-search/", 
             "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
             "title": "Binary Search"
         }, 
         {
-            "location": "/binary-search/#description", 
+            "location": "/search-algorithms/binary-search/#description", 
             "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
             "title": "Description"
         }, 
         {
-            "location": "/binary-search/#implementations", 
+            "location": "/search-algorithms/binary-search/#implementations", 
             "text": "C++, Java, Python", 
             "title": "Implementations"
         }, 
         {
             "location": "/sorting-algorithms/", 
-            "text": "Sorting Algorithms\n\n\n\nDefinitions\n\n\n\n\nStability - an algorithm that retains the order of same-value elements in the sorted list\n\n\n\n\nComparison Sorting\n\n\nCompare elements and shift to left or right. Big Theta (n log n)\n\n\nInteger Sorting\n\n\nCompute position by determining how many elements are smaller or larger", 
-            "title": "Introduction"
+            "text": "Sections:\n \nMerge Sort\n, \nQuick Sort\n\n\nDefinitions\n\n\n\n\n\n\nStability - Algorithm that retains the order of same-value elements in the sorted list\n\n\n\n\n\n\nComparison Sorting - Compare elements and shift to left or right. Big Theta (n log n)\n\n\n\n\n\n\nInteger Sorting - Compute position by determining how many elements are smaller or larger\n\n\n\n\n\n\n Sorting Algorithms\n\n\n\n\n Merge Sort\n\n\n Quick Sort", 
+            "title": "Sorting Algorithms"
         }, 
         {
             "location": "/sorting-algorithms/#definitions", 
-            "text": "Stability - an algorithm that retains the order of same-value elements in the sorted list", 
+            "text": "Stability - Algorithm that retains the order of same-value elements in the sorted list    Comparison Sorting - Compare elements and shift to left or right. Big Theta (n log n)    Integer Sorting - Compute position by determining how many elements are smaller or larger     Sorting Algorithms    Merge Sort   Quick Sort", 
             "title": "Definitions"
         }, 
         {
-            "location": "/sorting-algorithms/#comparison-sorting", 
-            "text": "Compare elements and shift to left or right. Big Theta (n log n)", 
-            "title": "Comparison Sorting"
-        }, 
-        {
-            "location": "/sorting-algorithms/#integer-sorting", 
-            "text": "Compute position by determining how many elements are smaller or larger", 
-            "title": "Integer Sorting"
-        }, 
-        {
-            "location": "/binary-search/", 
-            "text": "Binary Search\n\n\n\n\n\nGiven a sorted array, find N\n\n\nO(log n)\n\n\n\n\nDescription\n\n\nDivide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.\n\n\nImplementations\n\n\nC++, Java, Python", 
+            "location": "/sorting-algorithms/merge-sort/", 
+            "text": "Divide and conquer, Guaranteed O(n log n).\n\n\n\n\n\n\nFind the middle point to divide the array into two halves:\n\n       middle m = (l+r)/2\n\n\nCall mergeSort for first half: \n\n       Call mergeSort(arr, l, m)\n\n\nCall mergeSort for second half:\n       Call mergeSort(arr, m+1, r)\n\n\nMerge the two halves sorted in step 2 and 3:\n             Call merge(arr, l, m, r)", 
             "title": "Merge Sort"
         }, 
         {
-            "location": "/binary-search/#description", 
-            "text": "Divide the array in half and compare midpoint to N. Continue dividing in half until midpoint == N or the interval is empty.", 
-            "title": "Description"
-        }, 
-        {
-            "location": "/binary-search/#implementations", 
-            "text": "C++, Java, Python", 
-            "title": "Implementations"
-        }, 
-        {
-            "location": "/quick-sort/", 
-            "text": "Binary Search\n\n\n\nAsymptotic complexity is represented using Big O notation. It's a metric to describe the efficiency of algorithms.\n\n\nIn Order, common complexities are O(log x), O(x), O(x log x), O(x^2), O(2^x), O(x!)\n\n\nBig O, Theta, Omega\n\n\n\n\nBig O: In academia, upper bound on time.\n\n\nBig Omega: lower bound on time complexity\n\n\nBig Theta: Combination of O and Omega\n\n\n\n\nAmortized Time\n\n\nSome tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).\n\n\nLog N Runtime", 
+            "location": "/sorting-algorithms/quick-sort/", 
+            "text": "Quick sort is a divide and conquor sorting method", 
             "title": "Quick Sort"
         }, 
         {
-            "location": "/quick-sort/#big-o-theta-omega", 
-            "text": "Big O: In academia, upper bound on time.  Big Omega: lower bound on time complexity  Big Theta: Combination of O and Omega", 
-            "title": "Big O, Theta, Omega"
+            "location": "/javascript/", 
+            "text": "Javascript Basics\n\n\nChallenges - Javascript\n\n\nQuestion:\n Compare null vs undefined.\n\n\nAnswer:\n \n\n\nundefined\n is a type, the value of the global undefined variable. You can encounter undefined by:\n\n\n\n\ndeclare a variable without assigning a value.\n\n\nimplicit returns from functions.\n\n\nreturn statements that do not return anything.\n\n\nlookup non-existent object properties.\n\n\nfunction parameters that were not passed.\n\n\n\n\nnull\n is a primitive value (ie. not an object) that indicates \"no value\". typeof null === 'object',\nbut it has no properties and is primative.\n\n\n\n\nQuestion:\n What are the rules for implicit coerrsion.\n\n\nAnswer:\n \n\n\nundefined\n is a type, the value of the global undefined variable. You can encounter undefined by:\n\n\n\n\nIf both operands are same type use ===\n\n\nundefined == null\n\n\nIf string and number, convert string to number\n\n\nIf boolean and non-boolean, convert boolean to number and compare\n\n\nWhile comparing a string or number to an object, try to convert the object to a primitive type and then try to compare\n\n\n\n\n\n\nQuestion:\n How are objects compared in javascript\n\n\nAnswer:\n \n\n\nPrimitives are compared by value, objects are compared by reference.\n\n\n\n\nQuestion:\n What does \nthis\n refer to in javascript\n\n\nAnswer:\n \n\n\nthis\n is a property set by the Javascript engine which refers to the current execution context. It refers to an object and depends\non how a function is called.\n\n\n\n\nIn the global context or inside a function this refers to the window object.\n\n\nInside IIFE (immediate invoking function) if you use \"use strict\", value of this is undefined. To pass access window inside IIFE with \"use strict\", you have to pass this.\n\n\nWhile executing a function in the context of an object, the object becomes the value of this\n\n\nInside a setTimeout function, the value of this is the window object.\n\n\nIf you use a constructor (by using new keyword) to create an object, the value of this will refer to the newly created object.\n\n\nYou can set the value of this to any arbitrary object by passing the object as the first parameter of bind, call or apply\n\n\nFor dom event handler, value of this would be the element that fired the event\n\n\n\n\n\n\nQuestion:\n Does javascript pass by value or reference\n\n\nAnswer:\n \n\n\nPrimatives are pass by value, objects are pass by reference. As a result, changing props on an object will affect the original object.\nOverwriting the object will simply overwrite the reference being used.\n\n\nSources:\n\n\n\n\nthatjsdude\n\n\n\n\nlet date = new Date()\ndate.nextDay = () =", 
+            "title": "Basics"
         }, 
         {
-            "location": "/quick-sort/#amortized-time", 
-            "text": "Some tasks have periodic or potential slow components. Example, inserting into a fixed-size array is O(1).\nHowever, when the array is full you have to copy every element to a new, larger array (say, 2x size). This copy\noperation is O(x). Because it happens increasingly infrequently you can say the time complexity is O(X) while\namortized time is O(1).", 
-            "title": "Amortized Time"
-        }, 
-        {
-            "location": "/quick-sort/#log-n-runtime", 
+            "location": "/javascript/#javascript-basics", 
             "text": "", 
-            "title": "Log N Runtime"
+            "title": "Javascript Basics"
+        }, 
+        {
+            "location": "/javascript/#challenges-javascript", 
+            "text": "Question:  Compare null vs undefined.  Answer:    undefined  is a type, the value of the global undefined variable. You can encounter undefined by:   declare a variable without assigning a value.  implicit returns from functions.  return statements that do not return anything.  lookup non-existent object properties.  function parameters that were not passed.   null  is a primitive value (ie. not an object) that indicates \"no value\". typeof null === 'object',\nbut it has no properties and is primative.   Question:  What are the rules for implicit coerrsion.  Answer:    undefined  is a type, the value of the global undefined variable. You can encounter undefined by:   If both operands are same type use ===  undefined == null  If string and number, convert string to number  If boolean and non-boolean, convert boolean to number and compare  While comparing a string or number to an object, try to convert the object to a primitive type and then try to compare    Question:  How are objects compared in javascript  Answer:    Primitives are compared by value, objects are compared by reference.   Question:  What does  this  refer to in javascript  Answer:    this  is a property set by the Javascript engine which refers to the current execution context. It refers to an object and depends\non how a function is called.   In the global context or inside a function this refers to the window object.  Inside IIFE (immediate invoking function) if you use \"use strict\", value of this is undefined. To pass access window inside IIFE with \"use strict\", you have to pass this.  While executing a function in the context of an object, the object becomes the value of this  Inside a setTimeout function, the value of this is the window object.  If you use a constructor (by using new keyword) to create an object, the value of this will refer to the newly created object.  You can set the value of this to any arbitrary object by passing the object as the first parameter of bind, call or apply  For dom event handler, value of this would be the element that fired the event    Question:  Does javascript pass by value or reference  Answer:    Primatives are pass by value, objects are pass by reference. As a result, changing props on an object will affect the original object.\nOverwriting the object will simply overwrite the reference being used.  Sources:   thatjsdude   let date = new Date()\ndate.nextDay = () =", 
+            "title": "Challenges - Javascript"
         }
     ]
 }
