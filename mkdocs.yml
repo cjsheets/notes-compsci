@@ -1,8 +1,8 @@
 site_name: 'Computer Science Notes'
 pages:
-- High Level:
+- General:
     - Intoduction: 'index.md'
-    - Big-O: 'high-level/big-o/index.md'
+    - Big-O: 'general/big-o/index.md'
 - Data Structures:
     - List/Queue: 'data-structures/list-queue/index.md'
     - Tree/Tries: 'data-structures/tree/index.md'
@@ -10,13 +10,15 @@ pages:
     - Heap: 'data-structures/heap/index.md'
     - Vector: 'data-structures/vector/index.md'
     - Hash Table: 'data-structures/hash-table/index.md'
-- Search Algorithms:
+- Search:
     - Breadth/Depth First: 'search-algorithms/breadth-depth-first/index.md'
     - Binary Search: 'search-algorithms/binary-search/index.md'
-- Sorting Algorithms:
+- Sorting:
     - Introduction: 'sorting-algorithms/index.md'
     - Merge Sort: 'sorting-algorithms/merge-sort/index.md'
     - Quick Sort: 'sorting-algorithms/quick-sort/index.md'
+- Javascript:
+    - Basics: 'javascript/index.md'
 docs_dir: 'docs'
 site_dir: 'www'
 theme: material
