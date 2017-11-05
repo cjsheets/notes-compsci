@@ -4,14 +4,14 @@
     
         
     <url>
-     <loc>https://chadsheets.com/notes-compsci//general/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <loc>https://chadsheets.com/notes-compsci//</loc>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//general/big-o/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -20,44 +20,32 @@
     
         
     <url>
-     <loc>https://chadsheets.com/notes-compsci//general/</loc>
-     <lastmod>2017-10-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://chadsheets.com/notes-compsci//data-structures/list-queue/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//data-structures/tree/</loc>
-     <lastmod>2017-10-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://chadsheets.com/notes-compsci//data-structures/graph/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//data-structures/heap/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//data-structures/vector/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//data-structures/hash-table/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -66,20 +54,14 @@
     
         
     <url>
-     <loc>https://chadsheets.com/notes-compsci//general/</loc>
-     <lastmod>2017-10-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://chadsheets.com/notes-compsci//search-algorithms/breadth-depth-first/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//search-algorithms/binary-search/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -89,19 +71,19 @@
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//sorting-algorithms/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//sorting-algorithms/merge-sort/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//sorting-algorithms/quick-sort/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -111,7 +93,7 @@
         
     <url>
      <loc>https://chadsheets.com/notes-compsci//javascript/</loc>
-     <lastmod>2017-10-22</lastmod>
+     <lastmod>2017-11-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
