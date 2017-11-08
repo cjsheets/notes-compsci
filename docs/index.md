@@ -1,4 +1,4 @@
-<h1>CompSci Notes</h1>
+# CompSci Notes
 
 Information collected from a number of different resources.
 

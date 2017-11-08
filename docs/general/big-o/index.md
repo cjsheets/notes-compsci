@@ -22,3 +22,5 @@ amortized time is O(1).
 ## Reference
 
 The frequently reference [Big-O Cheatsheet](http://bigocheatsheet.com/)
+
+<iframe width="100%" height="300" src="//jsfiddle.net/cjsheets/9Lvae3ay/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
