@@ -30,3 +30,5 @@ pages:
       - Quick Sort: 'sorting-algorithms/quick-sort/index.md'
   - Javascript:
       - Basics: 'javascript/index.md'
+  - Interview:
+      - Basics: 'interview/index.md'
