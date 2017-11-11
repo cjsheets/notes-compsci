@@ -11,8 +11,9 @@ repo_url: 'https://github.com/cjsheets/notes-compsci'
 copyright: Copyright &copy; 2017 <a href="http://cjsheets.com">Chad Sheets</a>.
 
 pages:
-  - General:
+  - Overview:
       - Intoduction: 'index.md'
+  - General:
       - Big-O: 'general/big-o/index.md'
   - Data Structures:
       - List/Queue: 'data-structures/list-queue/index.md'
@@ -29,6 +30,7 @@ pages:
       - Merge Sort: 'sorting-algorithms/merge-sort/index.md'
       - Quick Sort: 'sorting-algorithms/quick-sort/index.md'
   - Javascript:
-      - Basics: 'javascript/index.md'
+      - Basics: 'javascript/basics.md'
   - Interview:
       - Basics: 'interview/index.md'
+      - System Design: 'interview/system-design.md'
