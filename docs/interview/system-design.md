@@ -31,6 +31,36 @@ Again, resist the temptation to dive into any particular component.
 Your system will typically have bottlenecks based on its constraints. It's goal is to choose scalable
 approaches that allow growth using standard tools or techniques.
 
+For example, use RESTful APIs and deploy exact clones to each server instance. A good API shouldn't store any
+session or user information so the user can be equally served by any machine.
+
+### Databases
+
+The data storage layer is a very common (and potentially expensive) bottleneck. Strategies for scalabiltiy include:
+
+* Denormalization
+    * Normalization refers to optimizing cols and tables to reduce data redundancy and improve integrity
+    * Denormalizing involves removing joins from retrievals
+    * Sacrifice write perf for much better read perf and scalability
+* Sharding
+* Tuning
+
+### Caching
+
+* Memcached or Redis
+
+There are two common strategies
+
+* Cache database queries
+    * Hashed query as key for response
+    * Main issue is cache expiry
+    * Complex queries cache poorly
+* Cache objects
+    * More involved setup
+    * Cached values represent logical components of the app
+
+
+
 
 ## 4. Scale the System
 
@@ -40,6 +70,30 @@ Now we dive into details depending mainly on the interest shown by the interview
 # Examples
 
 Here are some common open-ended system design problems.
+
+## Twitter Clone
+
+Design a clone of Twitter
+
+### 1. Clarify Constraints
+
+* How many users will we served
+    * How engaged will they be
+        * How often they tweet
+        * like/favorite tweets
+* How will users interact
+    * can they follow each other
+* How complex can their interactions be
+    * search / filter
+
+Say, 1M users, 1M tweets/day, 5M favorites/day, 10 "follows" per user, expect some major outliers
+
+### 2. Abstract Design
+
+Now that we have aproximite scale, we can start considering designs. We know we need to:
+
+* 
+
 
 ## URL Shortener Service
 
@@ -81,6 +135,19 @@ Define the high level system components.
     * Acts like a big hash table
 
 
-### 1. Clarify Constraints
+
+
+# Additional Resources
+
+* High Scalability Blog
+    * [ESPN](http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html)
+    * [EyeEm - Deep Learning Models](http://highscalability.com/blog/2017/10/23/one-model-at-a-time-integrating-and-running-deep-learning-mo.html)
+    * [Facebook live streams](http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html)
+    * [Kraken.io image optimization](http://highscalability.com/blog/2016/6/15/the-image-optimization-technology-that-serves-millions-of-re.html)
+    * [Plenty of Fish](http://highscalability.com/plentyoffish-architecture)
+    * [Twitter image uploads](http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html)
+    * [Twitter storing data](http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html)
+    * [Twitter timeline](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html)
+    * [Uber](http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html)
 
 
