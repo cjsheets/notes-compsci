@@ -41,9 +41,18 @@ It can also use session/local storage eliminating CORS issues.
 * Signature - signed combo of Base64URL encoded header + encoded paylod + secret
 
 
-## Authentication
+## Cross Origin
 
 **Q: Describe CORS**
 
-**A:** JWT consists of 3 parts separated by a '.'
+**A:** CORS stands for **Cross Origin Resource Sharing**.
+
+It allows users to access server resources when the current page originates from a different domain,
+port or protocol than the requested resource. This is done with HTTP headers.
+
+Without CORS headers, browsers don't allow scripts to make Cross origin HTTP requests.
+
+The spec requires browsers to preflight CORS requests with HTTP OPTIONS requests to retrieve the
+permissable methods and required auth data. There is a narrow exception for a select few "simple request" types.
+
 
