@@ -33,5 +33,6 @@ pages:
       - Basics: 'javascript/basics.md'
   - Interview:
       - Basics: 'interview/basics.md'
+      - Performance: 'interview/performance.md'
       - Security: 'interview/security.md'
       - System Design: 'interview/system-design.md'

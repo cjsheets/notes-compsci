@@ -49,14 +49,36 @@ Hypertext Transfer Protocol is a stateless application layer protocol for system
 
 
 
+**Q:** Describe Content Negotiation
+
+**A:** A server could have several representations of the same document at a particular URL. (different file format, 
+language, etc). 
+
+The client could sent a `Accept, Accept-Charset, Accept-Encoding, Accept-Language` header or the server could respond with
+HTTP 300 (Multiple Choices) to indicate the client should specify what it wants returned.
+
+
+
 **Q:** How could state be maintained in HTTP
 
 **A:** Using cookies
 
+
 **Q: Describe Cookies**
 
-**A:** CORS stands for **Cross Origin Resource Sharing**.
+**A:** Cookies are data provided by the server for users to store and provide back. They're used for:
 
+* session management
+* personalization
+* tracking
+
+They're set with a `Set-Cookie` header and returned in a `Cookie` header.
+
+They are included in every request so they can degrade performance if used for general data storage.
+
+**Q: What are Cookie alternatives**
+
+**A:** Web storage API (local / session storage)
 
 
 **Q:** Describe a REST API

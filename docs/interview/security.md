@@ -41,6 +41,14 @@ It can also use session/local storage eliminating CORS issues.
 * Signature - signed combo of Base64URL encoded header + encoded paylod + secret
 
 
+**Q: Describe Secure and HTTP Only Cookies**
+
+**A:** Cookies are inherently vulnerable compared to the Web Storage API. Sensitive data should never be stored in
+cookies. Sending `Secure` with `Set-Cookie` forces the cookie to only be returned via HTTPS. HttpOnly prevents access from Document.cookie which protects against XSS.
+
+You can also scope a cookie with Domain and Path directives.
+
+
 ## Cross Origin
 
 **Q: Describe CORS**
@@ -54,5 +62,52 @@ Without CORS headers, browsers don't allow scripts to make Cross origin HTTP req
 
 The spec requires browsers to preflight CORS requests with HTTP OPTIONS requests to retrieve the
 permissable methods and required auth data. There is a narrow exception for a select few "simple request" types.
+
+
+
+## HTTP
+
+
+**Q: Describe CSP**
+
+**A:** CSP stands for **Content Security Policy**.
+
+It is a security layer implemented by browsers to mitigate XSS and data injection attacks.
+
+CSP allows servers (or HTML meta tags) to define which origins are allowed to source executable scripts, styles,
+inline scripts, form actions, frame actions, etc. It can block mixed content and report incidents of XSS attempts.
+
+**Q: How is CSP implemented**
+
+**A:** Specify a policy via HTTP Header. `Content-Security-Policy: default-src 'self'`
+
+
+**Q: Describe HPKP**
+
+**A:** HTTP Public Key Pinning Extension. Adds a browser-side security measure where a server can
+tell a client which public key it should use. Protects against MITM if a CA were compromised.
+
+
+**Q: Describe HTTP Authorization**
+
+**A:** Along with 401 forbidden, server could provide a WWW-Authenticate header which would cause the client to
+ask the user for a password to provide the server on subsequent requests.
+
+
+**Q: Describe CSRF**
+
+**A:** Cross Site Request Forgery is an attack where commands are sent to a server impersonating a users intent.
+An example would be embeding an HTTP request + url parameters in an image SRC.
+
+
+**Q: Session Hijacking**
+
+**A:** If cookies are available to javascript and HttpOnly isn't set, a site could use document.cookies to make a request
+passing your session cookie via HTTP query params.
+
+**Q: What is X-Frame-Options**
+
+**A:** A header indicating whether a browser should render your page in a frame
+
 
 
