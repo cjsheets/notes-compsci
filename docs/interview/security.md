@@ -41,6 +41,11 @@ It can also use session/local storage eliminating CORS issues.
 * Signature - signed combo of Base64URL encoded header + encoded paylod + secret
 
 
+**Q: What is a refresh token**
+
+**A:** A secret the user can provide to regenerate an expired JWT. This is useful to avoid the user having to log-in
+more than once. It's particularly useful for apps that don't connect often like desktop or phone apps.
+
 **Q: Describe Secure and HTTP Only Cookies**
 
 **A:** Cookies are inherently vulnerable compared to the Web Storage API. Sensitive data should never be stored in
@@ -66,6 +71,27 @@ permissable methods and required auth data. There is a narrow exception for a se
 
 
 ## HTTP
+
+**Q: What is TLS**
+
+**A:** Transport Layer Security, successor to SSL. Refered to as HTTPS when used to encrypt HTTP traffic. TLS provides:
+
+* Authentication - uses CAs to verify parties are who they claim to be
+* Encryption - data transmitted is securely encrypted
+* Integrity - data was not tampered with during transmission
+
+
+**Q: Describe a TLS Handshake**
+
+**A:** TLS Handshake Protocol manages the authentication and key exchange for TLS communication. It:
+
+1. Client Hello + random value and supported cypher suites
+2. Server Hello + random value + server certificate
+3. Client creates and sends an encrypted pre-secret with the servers public key
+4. Client and server generate Master Secret + session keys with the pre-secret
+5. Client notifies server it will start transmitting encrypted messages with a particular 
+cypher spec and sends a "client done" message.
+6. Server sets up encryption and sends a "server done" message.
 
 
 **Q: Describe CSP**

@@ -5,11 +5,23 @@
 
 # Sample Questions
 
+## Math
+
+**Q:** Describe what a logarithm is doing
+
+**A:** What power must we raise this base to, in order to get this answer log 10 ( 100 ) = 10 ^ x = 100
+
+
+**Q:** Why do we use logarithms
+
+**A:** It's useful for time complexity when the problem space is regularly halved. "How many times must we divide our input n in half to reach 1 (or, find the answer)". An example is binary search which takes O( log n ) time or sorting which generally takes O( n log n ).
+
+
 ## Web Communications
 
 **Q:** Describe HTTP
 
-Hypertext Transfer Protocol is a stateless application layer protocol for system communication.
+**A:** Hypertext Transfer Protocol is a stateless application layer protocol for system communication.
 + S includes TLS. It follows a client server model.
 
 
